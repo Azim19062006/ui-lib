@@ -21,15 +21,21 @@ const Input = ({
   };
 
   const inputStyles = `
-    input-component
-    ${danger ? 'input-component--danger' : 'input-component--normal'}
-    ${isFocused ? 'input-component--focused' : ''}
+  input-component
+  ${danger ? 'input-component--danger' : 'input-component--normal'}
+  ${isFocused ? 'input-component--focused' : ''}
+`;
+
+  const labelStyles = `
+    input-label
+    ${danger ? 'input-label--danger' : ''}
+    ${isFocused && !danger ? 'input-label--focused' : ''}
   `;
 
   return (
     <div className="input-wrapper">
       {label && (
-        <label htmlFor={label.toLowerCase()} className="input-label">
+        <label htmlFor={label.toLowerCase()} className={labelStyles}>
           {label}
         </label>
       )}
