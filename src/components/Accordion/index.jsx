@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./index.css";
 
-function Accordion({ title, defaultOpen, children }) {
+function Accordion(props) {
+  const { title, defaultOpen = false, children } = props;
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
-  const toggleAccordion = () => setIsOpen(!isOpen);
+  const toggleAccordion = () => {
+    setIsOpen((prev) => !prev);
+  };
 
   return (
     <div className="accordion">

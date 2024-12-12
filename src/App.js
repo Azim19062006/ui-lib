@@ -1,5 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import Typography from "./components/Typography";
@@ -93,23 +91,14 @@ function App() {
 
       <h1>Accordion Component</h1>
 
-      <Accordion title="Accordion" defaultOpen={false}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+      <Accordion title="Accordion 1" defaultOpen={true}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </Accordion>
-
-      <Accordion title="Accordion Expanded" defaultOpen={true}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+      <Accordion title="Accordion 2" defaultOpen={false}>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </Accordion>
     </div>
   );
 }
-
-ReactDOM.render(<App />, document.getElementById("root"));
 
 export default App;

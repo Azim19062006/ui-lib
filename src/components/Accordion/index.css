@@ -1,33 +1,34 @@
 .accordion {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #f9f9f9;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 420px;
+    overflow: hidden;
   }
   
   .accordion-header {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
-  }
-  
-  .accordion-title {
+    font-size: 18px;
     font-weight: bold;
-    font-size: 16px;
   }
   
-  .accordion-icon {
-    font-size: 20px;
-    font-weight: bold;
-    color: #555;
+  .accordion-header:hover {
+    background-color: #f1f1f1;
   }
-  
+
   .accordion-content {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
+    width: 420px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+    background-color: white;
+    line-height: 24px;
   }
-  
